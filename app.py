@@ -4,12 +4,7 @@ from random import randint
 app = Flask(__name__)
  
 @app.route("/")
-def index():
-    return "Flask App!"
- 
-@app.route("/hello/<string:name>/")
-def hello(name):
-	#return name
+def hello():
 	facts = ["A giant panda spends around 55 perfect of its life collecting, preparing, and eating bamboo.",
 			 "Pandas have lived on earth for 2 to 3 million years.",
 			 "When a baby panda is born, it is shipped by FedEx to China to expand the gene pool.",
