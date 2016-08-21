@@ -1,12 +1,32 @@
 {% extends "layout.html" %}
 {% block body %}
 
+<html>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+<head>
+</head>
+
 <div class="block1">
 <h1>Time For Some Panda Facts!</h1>
 	<h2>Bet you didn't know this: </h2>
 	<p>
 	{{fact}}
 	</p>
-<img src="http://media0.giphy.com/media/bRJRe4SUFyp2w/giphy.gif">
+<img src="http://www.pbh2.com/wordpress/wp-content/uploads/2013/04/cutest-panda-gifs-babies.gif">
 </div>
+
+<body>
+
+<p>Want another panda fact? <p>
+<input type="button" value="Click here!" onClick="window.location.reload()">
+<p id="example"></p>
+<script>
+</script>
+</body>
+
+<script src="static/scripts/main.js"></script>
+
+</html>
+
 {% endblock %}
