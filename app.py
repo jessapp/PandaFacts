@@ -12,12 +12,12 @@ def hello():
 			 "Pandas like to eat bamboo because they have no umami taste receptors, so meat tastes bland to them.",
 			 "In ancient times, Chinese people feared pandas, and described them as metal-devouring black-and-white tapirs.",
 			 "Pandas walk with their front paws turned inward.",
-			 "Adult pandas have to eat as much as 80 pounds of bamboo every day to meet their nutritional needs."
+			 "Adult pandas have to eat as much as 80 pounds of bamboo every day to meet their nutritional needs.",
 			 "Unlike most bears, pandas do not hibernate.",
 			 "The panda's scientific name is Ailuropoda melanolecua, which means \"black and white cat foot\"",
-			 "The Chinese word for panda is \"xiongmao\", which means \"bear cat\"",
-			 ""
+			 "The Chinese word for panda is \"xiongmao,\" which means \"bear cat.\"",
 			]
+
 	randomNumber = randint(0,len(facts)-1)
 	fact = facts[randomNumber]
 
