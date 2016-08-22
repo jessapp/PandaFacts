@@ -11,7 +11,7 @@ config = {
 	'author_email': 'jess.appelbaum@gmail.com',
 	'version': '0.1',
 	'install_requires': ['nose'],
-	'packages': ['NAME'],
+	'packages': [],
 	'scripts': [],
 	'name': 'projectname'
 }
