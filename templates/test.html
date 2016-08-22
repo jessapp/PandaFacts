@@ -2,9 +2,9 @@
 {% block body %}
 
 <html>
-<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
-<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 <head>
+<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="static/custom.css">
 </head>
 
 <div class="jumbotron">
@@ -17,7 +17,14 @@
 </div>
 </div>
 
-<img src="https://media.giphy.com/media/bEqrzkLVWC3bW/giphy.gif">
+<img src="static/img/panda1.gif" id="banner" alt="Random image" />
+
+<script type="text/javascript">
+  var images = new Array('static/img/panda1.gif', 'static/img/panda2.gif', 'static/img/panda3.gif', 'static/img/panda4.gif', 'static/img/panda5.gif', 'static/img/panda6.gif', 'static/img/panda7.gif');
+  var l = images.length;
+  var random_no = Math.floor(l*Math.random());
+  document.getElementById("banner").src = images[random_no];
+</script>
 
 <script src="static/scripts/main.js"></script>
 
