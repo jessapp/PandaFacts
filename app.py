@@ -5,7 +5,7 @@ app = Flask(__name__)
  
 @app.route("/")
 def hello():
-	facts = ["A giant panda spends around 55 perfect of its life collecting, preparing, and eating bamboo.",
+	facts = ["A giant panda spends around 55 percent of its life collecting, preparing, and eating bamboo.",
 			 "Pandas have lived on earth for 2 to 3 million years.",
 			 "When a baby panda is born, it is shipped by FedEx to China to expand the gene pool.",
 			 "A group of pandas is called an \"embarassment.\"",
@@ -16,10 +16,12 @@ def hello():
 			 "Unlike most bears, pandas do not hibernate.",
 			 "The panda's scientific name is Ailuropoda melanolecua, which means \"black and white cat foot.\"",
 			 "The Chinese word for panda is \"xiongmao,\" which means \"bear cat.\"",
+			 "All pandas are on loan from China.",
+			 "Panda researchers have to wear panda costumes in order to work with cubs."
 			]
 
-	randomNumber = randint(0,len(facts)-1)
-	fact = facts[randomNumber]
+	random_number = randint(0,len(facts)-1)
+	fact = facts[random_number]
 
 	return render_template(
         'test.html',**locals())
