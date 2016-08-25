@@ -2,7 +2,8 @@ from flask import Flask, flash, redirect, render_template, request, session, abo
 from random import randint
  
 app = Flask(__name__)
- 
+
+# Randomizes facts upon refresh
 @app.route("/")
 def hello():
 	facts = ["A giant panda spends around 55 percent of its life collecting, preparing, and eating bamboo.",
